@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Project\MyProjects\Python\rep\login_form.ui'
+# Form implementation generated from reading ui file 'login_form.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -45,6 +45,9 @@ class Ui_Form(object):
         self.loginTb.setObjectName("loginTb")
         self.verticalLayout.addWidget(self.loginTb)
         self.passwordTb = QtWidgets.QLineEdit(Form)
+        self.passwordTb.setInputMethodHints(QtCore.Qt.ImhHiddenText|QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText|QtCore.Qt.ImhSensitiveData)
+        self.passwordTb.setText("")
+        self.passwordTb.setEchoMode(QtWidgets.QLineEdit.Password)
         self.passwordTb.setAlignment(QtCore.Qt.AlignCenter)
         self.passwordTb.setObjectName("passwordTb")
         self.verticalLayout.addWidget(self.passwordTb)
