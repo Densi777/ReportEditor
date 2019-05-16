@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'register_form.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(241, 233)
+        Form.setMinimumSize(QtCore.QSize(241, 233))
+        Form.setMaximumSize(QtCore.QSize(241, 233))
+        self.gridLayout = QtWidgets.QGridLayout(Form)
+        self.gridLayout.setObjectName("gridLayout")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label = QtWidgets.QLabel(Form)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Black")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout_3.addWidget(self.label)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setSpacing(5)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.surnameTb = QtWidgets.QLineEdit(Form)
+        self.surnameTb.setAlignment(QtCore.Qt.AlignCenter)
+        self.surnameTb.setObjectName("surnameTb")
+        self.verticalLayout.addWidget(self.surnameTb)
+        self.nameTb = QtWidgets.QLineEdit(Form)
+        self.nameTb.setAlignment(QtCore.Qt.AlignCenter)
+        self.nameTb.setObjectName("nameTb")
+        self.verticalLayout.addWidget(self.nameTb)
+        self.patronymicTb = QtWidgets.QLineEdit(Form)
+        self.patronymicTb.setAlignment(QtCore.Qt.AlignCenter)
+        self.patronymicTb.setObjectName("patronymicTb")
+        self.verticalLayout.addWidget(self.patronymicTb)
+        self.regLoginTb = QtWidgets.QLineEdit(Form)
+        self.regLoginTb.setAlignment(QtCore.Qt.AlignCenter)
+        self.regLoginTb.setObjectName("regLoginTb")
+        self.verticalLayout.addWidget(self.regLoginTb)
+        self.regPasswordTb = QtWidgets.QLineEdit(Form)
+        self.regPasswordTb.setText("")
+        self.regPasswordTb.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.regPasswordTb.setAlignment(QtCore.Qt.AlignCenter)
+        self.regPasswordTb.setObjectName("regPasswordTb")
+        self.verticalLayout.addWidget(self.regPasswordTb)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setSpacing(10)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.signUpBtn = QtWidgets.QPushButton(Form)
+        self.signUpBtn.setMinimumSize(QtCore.QSize(60, 20))
+        self.signUpBtn.setMaximumSize(QtCore.QSize(70, 20))
+        self.signUpBtn.setObjectName("signUpBtn")
+        self.horizontalLayout.addWidget(self.signUpBtn, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.cancelBtn = QtWidgets.QPushButton(Form)
+        self.cancelBtn.setMinimumSize(QtCore.QSize(75, 20))
+        self.cancelBtn.setMaximumSize(QtCore.QSize(75, 20))
+        self.cancelBtn.setObjectName("cancelBtn")
+        self.horizontalLayout.addWidget(self.cancelBtn, 0, QtCore.Qt.AlignRight)
+        self.verticalLayout_2.addLayout(self.horizontalLayout)
+        self.verticalLayout_3.addLayout(self.verticalLayout_2)
+        self.verticalLayout_4.addLayout(self.verticalLayout_3)
+        self.gridLayout.addLayout(self.verticalLayout_4, 0, 0, 1, 1)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label.setText(_translate("Form", "Регистрация"))
+        self.surnameTb.setPlaceholderText(_translate("Form", "Фамилия"))
+        self.nameTb.setPlaceholderText(_translate("Form", "Имя"))
+        self.patronymicTb.setPlaceholderText(_translate("Form", "Отчество"))
+        self.regLoginTb.setPlaceholderText(_translate("Form", "Имя пользователя"))
+        self.regPasswordTb.setPlaceholderText(_translate("Form", "Пароль"))
+        self.signUpBtn.setText(_translate("Form", "Сохранить"))
+        self.cancelBtn.setText(_translate("Form", "Отмена"))
+

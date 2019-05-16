@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Project\MyProjects\Python\rep\start_form.ui'
+# Form implementation generated from reading ui file 'start_form.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -43,9 +43,15 @@ class Ui_MainWindow(object):
         self.signInBtn.setMaximumSize(QtCore.QSize(60, 20))
         self.signInBtn.setObjectName("signInBtn")
         self.horizontalLayout_4.addWidget(self.signInBtn, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.registerBtn = QtWidgets.QPushButton(self.centralwidget)
+        self.registerBtn.setMinimumSize(QtCore.QSize(75, 20))
+        self.registerBtn.setMaximumSize(QtCore.QSize(75, 20))
+        self.registerBtn.setObjectName("registerBtn")
+        self.horizontalLayout_4.addWidget(self.registerBtn, 0, QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.horizontalLayout_4.setStretch(0, 20)
-        self.horizontalLayout_4.setStretch(1, 3000)
-        self.horizontalLayout_4.setStretch(2, 300000)
+        self.horizontalLayout_4.setStretch(1, 300)
+        self.horizontalLayout_4.setStretch(2, 3000)
+        self.horizontalLayout_4.setStretch(3, 300000)
         self.horizontalLayout.addLayout(self.horizontalLayout_4)
         self.openBtn = QtWidgets.QPushButton(self.centralwidget)
         self.openBtn.setMinimumSize(QtCore.QSize(30, 20))
@@ -91,6 +97,7 @@ class Ui_MainWindow(object):
         self.exitBtn.setText(_translate("MainWindow", "✖"))
         self.minBtn.setText(_translate("MainWindow", "_"))
         self.signInBtn.setText(_translate("MainWindow", "Войти"))
+        self.registerBtn.setText(_translate("MainWindow", "Регистрация"))
         self.openBtn.setText(_translate("MainWindow", "📂"))
         self.newBtn.setText(_translate("MainWindow", "Создать"))
         self.groupBox.setTitle(_translate("MainWindow", "Все отчёты"))
